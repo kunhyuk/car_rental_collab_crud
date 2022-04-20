@@ -2,7 +2,7 @@ const express = require('express')
 const methodOverride = require('method-override')
 const app = express()
 
-const PORT = 6000
+const PORT = 4500
 
 app.set('view engine', 'ejs')
 app.use(methodOverride('_method'))
