@@ -50,4 +50,4 @@ const carRentals = [
 	]
 ]
 
-console.log(carRentals)
+module.exports = carRentals
