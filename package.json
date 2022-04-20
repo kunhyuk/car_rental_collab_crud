@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/kunhyuk/car_rental_collab_crud/issues"
   },
-  "homepage": "https://github.com/kunhyuk/car_rental_collab_crud#readme"
+  "homepage": "https://github.com/kunhyuk/car_rental_collab_crud#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "method-override": "^3.0.0"
+  }
 }
