@@ -1,0 +1,20 @@
+{
+  "name": "car_rental_collab_crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "car_rentals.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunhyuk/car_rental_collab_crud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kunhyuk/car_rental_collab_crud/issues"
+  },
+  "homepage": "https://github.com/kunhyuk/car_rental_collab_crud#readme"
+}
