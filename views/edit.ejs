@@ -4,9 +4,41 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Editting <%= carRentals.carModel %> from <%= carRentals.Company %></title>
 </head>
 <body>
-	hey
+	<h1>Editting <%= carRentals.carModel %> from <%= carRentals.Company %></h1>
+	<img src = '<%= carRentals.carImg %>'>
+	<form method="POST" action="/rentals/<%= carNum %>?_method=PUT">
+		<div>
+			<label>Company Name: </label>
+			<input name = 'Company' type ="text" value="<%= carRentals.Company %>"/>
+		</div><br />
+		<div>
+			<label>Car Type: </label>
+			<input name = 'carType' type = 'text' value="<%= carRentals.carType %>"/>
+		</div><br />
+		<div>
+			<label>Door Count: </label>
+			<input name = 'doorCount' type = 'number' value="<%= carRentals.doorCount %>"/>
+		</div><br />
+		<div>
+			<label>Car Brand: </label>
+			<input name = 'carBrand' type = 'text' value="<%= carRentals.carBrand %>"/>
+		</div><br />
+		<div>
+			<label>Car Model: </label>
+			<input name = 'carModel' type = 'text' value="<%= carRentals.carModel %>"/>
+		</div><br />
+		<div>
+			<label>Car Year: </label>
+			<input name = 'carYear' type = 'number' value="<%= carRentals.carYear %>"/>
+		</div><br />
+		<div>
+			<label>Image: </label>
+			<input name = 'carImg' type = 'text' value="<%= carRentals.carImg %>"/>
+		</div><br />
+		<input type = 'submit' value= 'Edit Rental' />
+	</form>
 </body>
 </html>
