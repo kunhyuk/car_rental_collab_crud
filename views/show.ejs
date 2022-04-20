@@ -7,6 +7,16 @@
 	<title>Document</title>
 </head>
 <body>
-	hey
+	<div class="oneCar">
+		Rental Company: <%= carRentals.Company %><br>
+		Type: <%= carRentals.carType %><br>
+		Brand:<%= carRentals.carBrand %><br>
+		Model:<%= carRentals.carModel %><br>
+		Year:<%= carRentals.carYear %><br>
+		Door:<%= carRentals.doorCount %><br>
+		
+		<img class="car-image" src="<%= carRentals.carImg %>" alt="<% carRentals.carModel %>"
+	</div>
+	
 </body>
 </html>

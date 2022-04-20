@@ -7,6 +7,26 @@
 	<title>Document</title>
 </head>
 <body>
+
+	<div class = "car-lists">
+		<% for(let idx=0; idx < carRentals.length; idx++){ %>
+			<% const carRental=carRentals[idx] %>
+				<div>
+					<img class="car-image" src="<%= carRental.carImg %>" alt="<%= carRental.carModel%>" />
+					<div class>
+						<h3><a href="/rentals/<%= idx %>"><%= carRental.carModel %></a></h3>
+					<p>
+					<!-- add a delete form here  -->
+					<div>
+						<form method="POST" action="/rentals/<%=idx%>?_method=DELETE">
 	
+							<input type="submit" value="Delete Car"/>
+						</form>
+					</div>
+				</p>
+			</div>
+		<% } %>
+	</div>
+
 </body>
 </html>
