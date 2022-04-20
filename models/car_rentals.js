@@ -50,4 +50,4 @@ const carRentals = [
 	]
 ]
 
-modules.exports = carRentals
+module.exports = carRentals
